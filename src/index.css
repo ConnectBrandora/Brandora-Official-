@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 26% 14%;
+
+    --primary: 210 100% 16%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 17% 95%;
+    --secondary-foreground: 210 100% 16%;
+
+    --muted: 210 17% 95%;
+    --muted-foreground: 220 13% 46%;
+
+    --accent: 14 100% 62%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 17% 90%;
+    --input: 210 17% 90%;
+    --ring: 210 100% 16%;
+
+    --radius: 0.75rem;
+
+    --hero-gradient: linear-gradient(135deg, hsl(210 100% 16%) 0%, hsl(200 90% 24%) 100%);
+    --accent-gradient: linear-gradient(135deg, hsl(14 100% 62%) 0%, hsl(24 100% 58%) 100%);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-elegant: 0 10px 40px -10px hsl(210 100% 16% / 0.2);
+    --shadow-accent: 0 10px 30px -10px hsl(14 100% 62% / 0.3);
+  }
+
+  .dark {
+    --background: 220 26% 14%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 20% 18%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 20% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 210 100% 65%;
+    --primary-foreground: 220 26% 14%;
+
+    --secondary: 220 20% 22%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 22%;
+    --muted-foreground: 220 13% 70%;
+
+    --accent: 14 100% 62%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 210 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
