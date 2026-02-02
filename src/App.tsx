@@ -23,7 +23,7 @@ import brandoraLogo from "@/assets/brandora-logo.png";
 import backbrand from "@/assets/Backbrand.png";
 
 const queryClient = new QueryClient();
-const LAUNCH_TIME = "2026-02-02T14:00:00";
+const LAUNCH_TIME = "2026-02-02T15:00:00";
 
 const AppContent = () => {
   const [launchDone, setLaunchDone] = useState(false);
